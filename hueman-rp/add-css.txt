@@ -1,0 +1,118 @@
+
+/* Set Font size & style in top menu */
+
+.nav li a {
+	font-size:16px;
+	font-weight:bold;
+}
+
+/* Adjust display of blog entries */
+
+.post-title a { font-weight:bold; }
+
+.post-title { margin-bottom: 0; }
+
+.post-date {
+	padding-left: 0px;
+	margin-left: 0px;
+	color: #155084;
+}
+
+.post-meta { margin-bottom: 6px; }
+
+.entry.excerpt { color: #292f33; }
+
+.menu-item { color: #f5f8fa; }
+
+/* Adjust blog tagline text */
+
+.page-title h2 { font-size: 18px; }
+
+/* Adjust Social Follow Text */
+
+.sidebar-top p { font-size: 18px; color: #fff; }
+
+/* Adjust Widget Properties */
+
+.widget>h3 {
+	text-transform: none;
+}
+
+.sidebar .widget {
+	padding-top: 12px;
+	padding-bottom: 00px;
+}
+.sidebar .widget .widget-title {
+	font-size: 17px;
+	margin-bottom: 2px;
+}
+
+/* Adjust Login-Logout */
+
+.widget_login_logout .wrap_login_logout {
+	padding-top: 03px;
+	padding-left: 10px;
+}
+.widget_login_logout, .widget_login_logout a {
+	color: #000;
+}
+
+/* Adjust HU Tabs */
+
+.widget_hu_tabs .alx-tabs-container {
+	padding-left: 10px;
+}
+.alx-posts .post-item-date, .alx-tab .tab-item-date {
+	padding-left: 0px;
+	color: #155084;
+}
+
+/* Adjust Twitter */
+
+.sidebar .widget_twitter_timeline {
+	padding-top: 8px;
+}
+
+/* adjust whitespace in single post display */
+
+/*
+.single.post .pad {
+	padding-top: 5px;
+}
+*/
+
+.single-post .pad .group {
+	padding-top: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.single-post .page-title.pad.group {
+	padding-top: 10px;
+}
+
+.single-post .content .pad {
+	padding-top: 5px;
+}
+
+.single .post { margin-bottom: 0px; }
+
+.pagination { margin-bottom: 00px; }
+
+/*
+.author-bio {
+	padding-bottom: 1px; margin-bottom: 10px; }
+*/
+
+/*
+.author-bio .bio-avatar:after { content: none; }
+*/
+
+/* adjust jetpack sharing buttons - doesnt work */
+/*
+.sharedaddy .sd-title::before>h3 { margin-bottom: 0.5em; }
+
+.sd-title { margin-bottom: 0.5em; }
+
+.cd-block .sd-content { margin-bottom: 0.5em; }
+*/
