@@ -35,16 +35,25 @@
 <div class="clear"></div>
 
 <?php if ( ( hu_is_checked( 'author-bio' ) ) && get_the_author_meta( 'description' ) ): ?>
+  <?php $user_twitter = get_the_author_meta('twitter'); ?>
+  <?php $user_gplus = get_the_author_meta( 'googleplus' ); ?>
   <div class="author-bio">
     <div class="bio-avatar"><?php echo get_avatar(get_the_author_meta('user_email'),'128'); ?></div>
     <p class="bio-name"><?php the_author_meta('display_name'); ?></p>
     <p class="bio-desc"><?php the_author_meta('description'); ?></p>
+    <p class="bio-twitter">Twitter <a href="https://twitter.com/<?php echo $user_twitter; ?>"><?php echo $user_twitter; ?></a></p>
+    <p class="bio-google">Google+ <a href="<?php echo $user_gplus; ?>"><?php echo $user_gplus; ?></a></p>
+
+      <!-- Goog<?php echo $user_gplus ?></a></p></div> -->
+    	<!-- <a href="https://plus.google.com/+RobertPeteuil1" rel="author">Google Profile</a> -->
     <div class="clear"></div>
   </div>
 <?php endif; ?>
 
+<!-- Display Jetpack Social Sharing Here  -->
 <?php if ( function_exists( 'sharing_display' ) ) { sharing_display( '', true ); } ?>
 
+<!-- Hide the display of tags  -->
 <!-- <?php the_tags('<p class="post-tags"><span>'.__('Tags:','hueman').'</span> ','','</p>'); ?> -->
 
 <?php if ( 'content' == hu_get_option( 'post-nav' ) ) { get_template_part('parts/post-nav'); } ?>
