@@ -11,23 +11,19 @@ Author: Robert Peteuil
 
 /*  single : author bio
 /* ------------------------------------ */
-
-/*.author-bio { border: 4px solid #eee; position: relative; padding: 15px 15px 10px 95px; color: #888; margin-bottom: 40px; }*/
-.author-bio { border: none; background-color: #efefef; border-top: 5px solid #333; border-bottom: 1px solid #333; position: relative; padding: 15px 15px 10px 95px; color: #555; margin-bottom: 10px; }
+.author-bio { border: none; background-color: #efefef; border-top: 5px solid #333; border-bottom: 1px solid #333; position: relative; padding: 15px 15px 8px 95px; color: #555; margin-top: 5px; margin-bottom: 20px; }
 
 .author-bio:before { content: none; }
 .author-bio:after { content: none; }
 .author-bio .bio-avatar { float: left; margin: 0px 0 8px -80px; width: 64px; height: auto; position: relative; }
 .author-bio .bio-avatar:after { content: none; }
 .author-bio .bio-avatar img { display: block; width: 100%; height: auto; -webkit-border-radius: 3px; border-radius: 3px; }
-.author-bio p { margin-bottom: 8px; }
-
-/*.author-bio .bio-name { color: #444; font-weight: 600; margin-bottom: 4px; }*/
 .author-bio .bio-name { color: #444; font-weight: 600; line-height: 1em; margin-bottom: 4px; }
+.author-bio .bio-desc { color: #666; font-size: .9em; line-height: 1.3em; margin-bottom: 4px; }
+.author-bio .bio-twitter { color: #444; padding-left: 0px; font-weight: 600; font-size: .8em; line-height: 1em; }
+.author-bio .bio-linkedin,
+.author-bio .bio-google { padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }
 
-/*.author-bio .bio-desc { color: #888; font-size: 0.9375em; line-height: 1.5em; }*/
-.author-bio .bio-desc { color: #666; font-size: .9em; line-height: 1.4em; }
-
-.author-bio .bio-twitter { float:left; margin-left: 40px; color: #444; font-weight: 600; font-size: .8em; line-height: 1em; }
-.author-bio .bio-linkedin { float: inline; margin-left: 200px; font-weight: 600; font-size: .8em; line-height: 1em; }
-/*.author-bio .bio-google { float: inline; margin-left: 300px; font-weight: 600; font-size: .8em; line-height: 1em; }*/
+/*  single : sharing buttons 
+/* ------------------------------------ */
+.sharedaddy { padding-left: 8%; padding-bottom: 6px; }
