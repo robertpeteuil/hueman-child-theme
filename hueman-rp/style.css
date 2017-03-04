@@ -17,18 +17,9 @@ Author: Robert Peteuil
 
 .author-bio:before { content: none; }
 .author-bio:after { content: none; }
-
-/*.author-bio:before { content:''; display: inline-block; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #eee; position: absolute; top: -8px; left: 13px; }*/
-/*.author-bio:after { content:''; display: inline-block; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid #fff; position: absolute; top: -5px; left: 15px; }*/
-
-/*.author-bio .bio-avatar { float: left; margin: 0 0 8px -80px; width: 64px; height: auto; position: relative; }*/
 .author-bio .bio-avatar { float: left; margin: 0px 0 8px -80px; width: 64px; height: auto; position: relative; }
-
 .author-bio .bio-avatar:after { content: none; }
-/*.author-bio .bio-avatar:after { background: #3b8dbd; position: absolute; right: 0; bottom: 0; padding: 4px 4px; content: "\f040"; color: #fff; font-size: 12px; line-height: 12px; width: 12px; font-style: normal; font-family: FontAwesome; text-align: center; -webkit-border-radius: 3px; border-radius: 3px; }*/
-
 .author-bio .bio-avatar img { display: block; width: 100%; height: auto; -webkit-border-radius: 3px; border-radius: 3px; }
-
 .author-bio p { margin-bottom: 8px; }
 
 /*.author-bio .bio-name { color: #444; font-weight: 600; margin-bottom: 4px; }*/
@@ -36,3 +27,7 @@ Author: Robert Peteuil
 
 /*.author-bio .bio-desc { color: #888; font-size: 0.9375em; line-height: 1.5em; }*/
 .author-bio .bio-desc { color: #666; font-size: .9em; line-height: 1.4em; }
+
+.author-bio .bio-twitter { float:left; margin-left: 40px; color: #444; font-weight: 600; font-size: .8em; line-height: 1em; }
+.author-bio .bio-linkedin { float: inline; margin-left: 200px; font-weight: 600; font-size: .8em; line-height: 1em; }
+/*.author-bio .bio-google { float: inline; margin-left: 300px; font-weight: 600; font-size: .8em; line-height: 1em; }*/
