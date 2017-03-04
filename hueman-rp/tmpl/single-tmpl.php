@@ -36,17 +36,27 @@
 
 <?php if ( ( hu_is_checked( 'author-bio' ) ) && get_the_author_meta( 'description' ) ): ?>
   <div class="author-bio">
-    <div class="bio-avatar"><?php echo get_avatar(get_the_author_meta('user_email'),'128'); ?></div>
-    <p class="bio-name"><?php the_author_meta('display_name'); ?></p>
-    <p class="bio-desc"><?php the_author_meta('description'); ?></p>
-
+    <?php $user_name = get_the_author_meta('display_name'); ?>
     <?php $user_twitter = get_the_author_meta('twitter'); ?>
     <?php $user_website = get_the_author_meta('user_url'); ?>
     <?php $user_gplus = get_the_author_meta('googleplus'); ?>
 
+    <div class="bio-avatar"><?php echo get_avatar(get_the_author_meta('user_email'),'128'); ?></div>
+
+    <!-- Link authors name to G+ account, if G+ meta is set  -->
+    <?php if (empty($user_gplus)): ?>
+      <!-- no G+ meta - display name only, not link  -->
+      <p class="bio-name"><?php the_author_meta('display_name'); ?></p>
+    <?php else: ?>
+      <!-- make name a link to G+ profile with rel="author" attribute -->
+      <p class="bio-name"><a target="_blank" href="<?php echo $user_gplus; ?>?rel=author"><?php echo $user_name; ?></a></p>
+    <?php endif ?>
+
+    <p class="bio-desc"><?php the_author_meta('description'); ?></p>
+
     <div><span class="bio-twitter">Twitter <a target="_blank" href="https://twitter.com/<?php echo $user_twitter; ?>">&#64<?php echo $user_twitter; ?></a></span>
-    <span class="bio-linkedin"><a target="_blank" href="<?php echo $user_website; ?>" >LinkedIn</a></span>
-    <span class="bio-google"><a target="_blank" href="<?php echo $user_gplus; ?>" rel="author">Google+</a></span></div>
+    <span class="bio-linkedin">LinkedIn <a target="_blank" href="<?php echo $user_website; ?>" >Profile</a></span></div>
+    <!-- <span class="bio-google"><a target="_blank" href="<?php echo $user_gplus; ?>" rel="author">Google+</a></span></div> -->
 
     <div class="clear"></div>
   </div>
