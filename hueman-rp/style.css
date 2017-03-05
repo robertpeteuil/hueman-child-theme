@@ -21,9 +21,10 @@ Author: Robert Peteuil
 .author-bio .bio-name { color: #444; font-weight: 600; line-height: 1em; margin-bottom: 4px; }
 .author-bio .bio-desc { color: #666; font-size: .9em; line-height: 1.3em; margin-bottom: 4px; }
 .author-bio .bio-twitter { color: #444; padding-left: 0px; font-weight: 600; font-size: .8em; line-height: 1em; }
-.author-bio .bio-linkedin,
-.author-bio .bio-google { padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }
+.author-bio .bio-linkedin { color: #444; padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }
+/*.author-bio .bio-google { padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }*/
 
-/*  single : sharing buttons 
+/*  single : sharing buttons
 /* ------------------------------------ */
-.sharedaddy { padding-left: 8%; padding-bottom: 6px; }
+.share-heading { color: #444; font-weight: 600; line-height: 1em; }
+.sharedaddy { padding-left: 10%; padding-bottom: 6px; margin-top: -24px; }
