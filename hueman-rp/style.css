@@ -7,10 +7,10 @@ Author: Robert Peteuil
 */
 /* Your awesome customization starts here */
 
+<link rel="stylesheet" href="style.css?parameter=1" type="text/css" />
 
 
-/*  single : author bio
-/* ------------------------------------ */
+/*  single : author bio */
 .author-bio { border: none; background-color: #efefef; border-top: 5px solid #333; border-bottom: 1px solid #333; position: relative; padding: 15px 15px 8px 95px; color: #555; margin-top: 5px; margin-bottom: 20px; }
 
 .author-bio:before { content: none; }
@@ -24,7 +24,6 @@ Author: Robert Peteuil
 .author-bio .bio-linkedin { color: #444; padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }
 /*.author-bio .bio-google { padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }*/
 
-/*  single : sharing buttons
-/* ------------------------------------ */
+/*  single : sharing buttons */
 .share-heading { color: #444; font-weight: 600; line-height: 1em; }
-.sharedaddy { padding-left: 10%; padding-bottom: 6px; margin-top: -24px; }
+.sharedaddy { padding-left: 110px; padding-bottom: 6px; margin-top: -24px; }
