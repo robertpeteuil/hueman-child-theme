@@ -69,7 +69,7 @@
 <?php endif; ?>
 
 <!-- Display Jetpack Social Sharing Here  -->
-<span class="share-heading">SHARE THIS: <?php if ( function_exists( 'sharing_display' ) ) { sharing_display( '', true ); } ?></span>
+<div class="share-heading">SHARE THIS: <?php if ( function_exists( 'sharing_display' ) ) { sharing_display( '', true ); } ?></div>
 
 <!-- Hide the display of tags  -->
 <!-- <?php the_tags('<p class="post-tags"><span>'.__('Tags:','hueman').'</span> ','','</p>'); ?> -->
