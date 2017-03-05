@@ -1,6 +1,6 @@
 <?php
 
-/* enque parent stylesheet into shild-theme */
+/* enque my stylesheet and override parent theme's enque of it */
 function my_theme_enqueue_styles() {
     wp_enqueue_style( 'child-style',
         get_stylesheet_directory_uri() . '/style.css', array( 'hueman-main-style' ),
