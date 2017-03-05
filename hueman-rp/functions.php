@@ -2,13 +2,13 @@
 
 /* enque parent stylesheet into shild-theme */
 function my_theme_enqueue_styles() {
-    $parent_style = 'parent-style';
-    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/assets/front/css/main.css' );
-    // THE PARENT THEME ENQUEUES THE CHILD CSS - SO I DONT NEED TO DO IT HERE 
-    // wp_enqueue_style( 'child-style',
-    //     get_stylesheet_directory_uri() . '/style.css', array(), filemtime( get_stylesheet_directory() . '/style.css' ), 'all');
+    wp_enqueue_style( 'child-style',
+        get_stylesheet_directory_uri() . '/style.css', array( 'hueman-main-style' ),
+        filemtime( get_stylesheet_directory() . '/style.css' ), 'all');
+    wp_deregister_style( 'theme-stylesheet' );
+    wp_dequeue_style( 'theme-stylesheet' );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', 999 );
 
 /* WHide Dashboard View from all users by default */
 add_action("user_register", "set_user_admin_bar_false_by_default", 10, 1);
@@ -31,6 +31,7 @@ add_action( 'loop_start', 'jptweak_remove_share' );
 function shapeSpace_remove_toolbar_node($wp_admin_bar) {
   $wp_admin_bar->remove_node('wp-logo');              // WordPress Logo
   $wp_admin_bar->remove_node('new-content');          // Icon to add new site content
+  $wp_admin_bar->remove_node('stats');                // Bargraph when viewing site
 }
 add_action('admin_bar_menu', 'shapeSpace_remove_toolbar_node', 999);
 
