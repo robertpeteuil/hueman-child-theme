@@ -1,13 +1,11 @@
 /*
 Theme Name: Hueman-rp
-Version: 1.0
+Version: 10.1
 Description: A child theme of Hueman
 Template: hueman
 Author: Robert Peteuil
 */
 /* Your awesome customization starts here */
-
-<link rel="stylesheet" href="style.css?parameter=1" type="text/css" />
 
 
 /*  single : author bio */
@@ -26,4 +24,4 @@ Author: Robert Peteuil
 
 /*  single : sharing buttons */
 .share-heading { color: #444; font-weight: 600; line-height: 1em; }
-.sharedaddy { padding-left: 110px; padding-bottom: 6px; margin-top: -24px; }
+.sharedaddy { padding-left: 110px; padding-bottom: 6px; margin-top: -19px; }
