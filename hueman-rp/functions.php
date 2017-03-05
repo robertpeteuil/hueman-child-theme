@@ -1,19 +1,14 @@
 <?php
 
 /* enque parent stylesheet into shild-theme */
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 function my_theme_enqueue_styles() {
     $parent_style = 'parent-style';
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/assets/front/css/main.css' );
-    wp_enqueue_style( 'child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        // array( $parent_style ),
-        array(),
-        // wp_get_theme()->get('Version')
-        rand(111,9999), 'all'
-    );
+    // THE PARENT THEME ENQUEUES THE CHILD CSS - SO I DONT NEED TO DO IT HERE 
+    // wp_enqueue_style( 'child-style',
+    //     get_stylesheet_directory_uri() . '/style.css', array(), filemtime( get_stylesheet_directory() . '/style.css' ), 'all');
 }
-// wp_register_style( 'custom-style', get_template_directory_uri() . '/css/custom-style.css', array(), rand(111,9999), 'all' );
+add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
 
 /* WHide Dashboard View from all users by default */
 add_action("user_register", "set_user_admin_bar_false_by_default", 10, 1);
@@ -23,10 +18,6 @@ function set_user_admin_bar_false_by_default($user_id) {
 }
 
 // Stop jetpack from placing social sharing butttons inside content
-//    It does this by default by adding these from inside the_content() function
-// This function stops it from automatically displaying them
-//    Then you need to put function on page where you want them displayed.
-//    described here:  https://jetpack.com/2013/06/10/moving-sharing-icons/
 function jptweak_remove_share() {
     remove_filter( 'the_content', 'sharing_display',19 );
     remove_filter( 'the_excerpt', 'sharing_display',19 );
@@ -37,7 +28,6 @@ function jptweak_remove_share() {
 add_action( 'loop_start', 'jptweak_remove_share' );
 
 // remove admin toolbar items
-// https://digwp.com/2016/06/remove-toolbar-items/
 function shapeSpace_remove_toolbar_node($wp_admin_bar) {
   $wp_admin_bar->remove_node('wp-logo');              // WordPress Logo
   $wp_admin_bar->remove_node('new-content');          // Icon to add new site content
