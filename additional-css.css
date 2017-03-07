@@ -15,7 +15,7 @@
 .entry.excerpt { color: #292f33; }
 .menu-item { color: #f5f8fa; }
 /* Adjust blog tagline text */
-.page-title h2 { font-size: 18px; }
+.page-title h2, .page-title span, .page-title span a { font-size: 18px; color: #333; }
 /* Adjust Social Follow Text */
 .sidebar-top p { font-size: 18px; color: #fff; }
 /* Adjust Widget Properties */
@@ -57,10 +57,15 @@
 	padding-right: 15px;
 }
 .single-post .page-title.pad.group {
-	padding-top: 10px;
+	padding-top: 12px;
 }
 .single-post .content .pad {
 	padding-top: 5px;
 }
 .single .post { margin-bottom: 0px; }
-.pagination { margin-bottom: 00px; }
+.pagination { margin-bottom: 0px; }
+/* adjust related post display */
+.related-posts .post-meta { margin-left: -15px; }
+.related-posts .post-title { margin-bottom: 0px!important; }
+.related-posts .post-thumbnail { margin-bottom: .5em; }
+.related-posts { margin-bottom: 1em; }
