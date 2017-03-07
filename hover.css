@@ -1,0 +1,95 @@
+/*  Transitions  */
+a:after {
+-webkit-transition: all 0.2s ease;
+-moz-transition: all 0.2s ease;
+-o-transition: all 0.2s ease;
+transition: all 0.2s ease; }
+
+a img {
+-webkit-transition: opacity 0.2s ease;
+-moz-transition: opacity 0.2s ease;
+-o-transition: opacity 0.2s ease;
+transition: opacity 0.2s ease; }
+
+.post-thumbnail { width: 100%; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease; }
+.post-nav li a i {
+-webkit-transition: all 0.2s ease-out;
+-moz-transition: all 0.2s ease-out;
+-o-transition: all 0.2s ease-out;
+transition: all 0.2s ease-out; }
+
+.alx-posts a { -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; transition: all 0.2s ease; }
+.alx-posts .post-item-thumbnail { position: relative; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease; }
+.alx-tab .tab-item-avatar { margin-left: -62px; width: 48px; float: left; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease; }
+
+
+/* hover effects */
+a:hover { color: #444; }
+.page-title a:hover { color: #444; }
+.post-hover:hover .post-thumbnail { opacity: 0.75; }
+.post-hover:hover .post-title a { color: #3b8dbd; }
+.post-hover:hover .thumb-icon { background: #fff; color: #111; }
+.content .post-nav li a:hover i { color: #3b8dbd; }
+
+.widget a:hover { color: #444; }
+.widget > h3 a:hover { color: #444; }
+
+.alx-posts li:hover .hu-svg-placeholder, .alx-tab li:hover .hu-svg-placeholder, .post-hover:hover .hu-svg-placeholder {
+    opacity: 0!important;
+}
+.alx-tabs-nav li a:hover { border-bottom-color: #ccc; }
+.alx-tab .tab-item-category a:hover,
+.alx-posts .post-item-category a:hover { color: #444!important; }
+.alx-tab li:hover .tab-item-thumbnail,
+.alx-tab li:hover .tab-item-avatar,
+.alx-posts li:hover .post-item-thumbnail { opacity: 0.75; }
+.alx-tab li:hover .thumb-icon,
+.alx-posts li:hover .thumb-icon { background: #fff; color: #111; }
+.alx-posts li:hover .hu-svg-placeholder, .alx-tab li:hover .hu-svg-placeholder, .post-hover:hover .hu-svg-placeholder {
+    opacity: 0!important;
+}
+.s1 .alx-tab .tab-item-category a,
+.s1 .alx-posts .post-item-category a,
+.s1 .alx-tab li:hover .tab-item-title a,
+.s1 .alx-tab li:hover .tab-item-comment a,
+.s1 .alx-posts li:hover .post-item-title a,
+#footer .alx-tab .tab-item-category a,
+#footer .alx-posts .post-item-category a,
+#footer .alx-tab li:hover .tab-item-title a,
+#footer .alx-tab li:hover .tab-item-comment a,
+#footer .alx-posts li:hover .post-item-title a { color: #3b8dbd; }
+#footer .alx-tabs-nav li a:hover { border-bottom-color: #ddd; }
+
+.s2 .alx-tab .tab-item-category a,
+.s2 .alx-posts .post-item-category a,
+.s2 .alx-tab li:hover .tab-item-title a,
+.s2 .alx-tab li:hover .tab-item-comment a,
+.s2 .alx-posts li:hover .post-item-title a { color: #82b965; }
+
+#footer a:hover { color: #ccc; }
+#footer .widget a:hover { color: #666; }
+#footer-bottom a:hover { color: #fff; }
+#footer-bottom #back-to-top:hover { color: #444; }
+#footer-bottom .social-links a:hover { color: #fff; }
+
+.wp-pagenavi a:hover,
+.wp-pagenavi a:active,
+.wp-pagenavi span.current { color: #444; }
+.wp-pagenavi a:hover,
+.wp-pagenavi a:active,
+.wp-pagenavi span.current { background: none; border: none; border-bottom: 3px solid #3b8dbd; border-top: 1px solid #f1f1f1; }
+
+.post-thumbnail img {
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+  box-shadow: 0px 0px 0px #bbb;
+}
+.post-thumbnail img:hover {
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+  box-shadow: 0px 0px 8px #ddd;
+}
