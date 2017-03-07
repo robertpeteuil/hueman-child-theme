@@ -7,21 +7,16 @@ Author: Robert Peteuil
 */
 /* Your awesome customization starts here */
 
-/*  background colors */
-.content { background-color: #f2f2f2; }
-.page-title { background: #ddd!important; }
-.sidebar { background-color: #ddd; }
-
-/* these lines extend the sidebar all the way to the end of the content area */
-.sidebar { padding-bottom: 30000px; margin-bottom: -30000px; }
+/*  background colors - make sure they extend to the end of main-inner */
 .main-inner { overflow: hidden; }
+.content { background-color: #f2f2f2; padding-bottom: 30000px; margin-bottom: -30000px; }
+.page-title { background: #ddd!important; }
+.sidebar { background-color: #ddd; padding-bottom: 30000px; margin-bottom: -30000px; }
 #footer { background: #eee; }
 
 /*  border edges  */
 .page-title { box-shadow: 0px 2px 6px #bbb; }
 .sidebar { box-shadow: -1px 0px #bbb; }
-/*.page-title { border-bottom: 1px solid #111; }*/
-/*.sidebar { box-shadow: -3px 0px 2px #999; }*/
 
 /*  text colors & weights */
 .content .page-title h2 { color: #111; }
