@@ -7,7 +7,7 @@ Author: Robert Peteuil
 */
 /* Your awesome customization starts here */
 
-/*  background colors - make sure they extend to the end of main-inner */
+/*  background colors - that extend to the bottom of main-inner */
 .main-inner { overflow: hidden; }
 .content { background-color: #f2f2f2; padding-bottom: 30000px; margin-bottom: -30000px; }
 .page-title { background: #ddd!important; }
