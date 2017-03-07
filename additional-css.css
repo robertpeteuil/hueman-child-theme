@@ -3,7 +3,7 @@
 	font-size:16px;
 	font-weight:bold;
 }
-/* Adjust display of blog entries */
+/* Adjust display of blog entries on homepage */
 .post-title a { font-weight:bold; }
 .post-title { margin-bottom: 0; }
 .post-date {
