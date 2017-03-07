@@ -1,10 +1,18 @@
 /* Set Font size & style in top menu */
 .nav li a {
-	font-size:16px;
-	font-weight:bold;
+	font-size: 1em;
+	font-weight: bold;
 }
+
+/* Adjust blog tagline text */
+/*OLD -
+	.page-title h2, .page-title span, .page-title span a { font-size: 1.125em; color: #333; }*/
+/* new */
+.page-title>h2 { font-size: 1.1em; color: #333; }
+.page-title span, .page-title span a { font-size: 1.05em; color: #333; }
+
 /* Adjust display of blog entries on homepage */
-.post-title a { font-weight:bold; }
+.post-title a { font-weight: bold; }
 .post-title { margin-bottom: 0; }
 .post-date {
 	padding-left: 0px;
@@ -13,32 +21,31 @@
 }
 .post-meta { margin-bottom: 6px; }
 .entry.excerpt { color: #292f33; }
-.menu-item { color: #f5f8fa; }
-/* Adjust blog tagline text */
-.page-title h2, .page-title span, .page-title span a { font-size: 18px; color: #333; }
-/* Adjust Social Follow Text */
-.sidebar-top p { font-size: 18px; color: #fff; }
-/* Adjust Widget Properties */
+
+/* Adjust Social Follow Text - MIG */
+.sidebar-top p { font-size: 1.125em; color: #fff; }
+
+/* Adjust Widget Properties - MIG */
 .sidebar .widget>h3 {
 	text-transform: none;
 }
 .sidebar .widget {
 	padding-top: 12px;
-	padding-bottom: 00px;
+	padding-bottom: 0px;
 }
 .sidebar .widget .widget-title {
-	font-size: 17px;
+	font-size: 1.125em;
 	margin-bottom: 2px;
 }
-/* Adjust Login-Logout */
+/* Adjust Login-Logout Widget - MIG */
 .widget_login_logout .wrap_login_logout {
-	padding-top: 03px;
+	padding-top: 3px;
 	padding-left: 10px;
 }
 .widget_login_logout, .widget_login_logout a {
 	color: #000;
 }
-/* Adjust HU Tabs */
+/* Adjust HU Tabs Widget - MIG */
 .widget_hu_tabs .alx-tabs-container {
 	padding-left: 10px;
 }
@@ -46,24 +53,34 @@
 	padding-left: 0px;
 	color: #155084;
 }
-/* Adjust Twitter */
+/* Adjust Twitter Widget - MIG */
 .sidebar .widget_twitter_timeline {
 	padding-top: 8px;
 }
+
 /* adjust whitespace in single post display */
-.single-post .pad .group {
+/* OLD */
+/*.single-post .pad .group {
 	padding-top: 5px;
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.single-post .content .pad {
+	padding-top: 5px;
+}*/
+
+/*NEW */
 .single-post .page-title.pad.group {
 	padding-top: 12px;
 }
-.single-post .content .pad {
-	padding-top: 5px;
+.single .post {
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
-.single .post { margin-bottom: 0px; }
-.pagination { margin-bottom: 0px; }
+.pagination { margin-bottom: 5px; }
+
 /* adjust related post display */
 .related-posts .post-meta { margin-left: -15px; }
 .related-posts .post-title { margin-bottom: 0px!important; }
