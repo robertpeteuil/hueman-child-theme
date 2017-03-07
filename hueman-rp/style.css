@@ -9,32 +9,53 @@ Author: Robert Peteuil
 
 /*  background colors - that extend to the bottom of main-inner */
 .main-inner { overflow: hidden; }
-.content { background-color: #f2f2f2; padding-bottom: 30000px; margin-bottom: -30000px; }
+.content { background-color: #fcfcfc; padding-bottom: 30000px; margin-bottom: -30000px; }
 .page-title { background: #ddd!important; }
 .sidebar { background-color: #ddd; padding-bottom: 30000px; margin-bottom: -30000px; }
-#footer { background: #eee; }
+#footer { background: #ddd; }
 
 /*  border edges  */
 .page-title { box-shadow: 0px 2px 6px #bbb; }
 .sidebar { box-shadow: -1px 0px #bbb; }
 
-/*  text colors & weights */
-.content .page-title h2 { color: #111; }
-.content .post-title a { color: #222; }
-.content .post-content .entry.excerpt p { color: #111; }
-.content .post-content .post-date { font-weight: 600; }
-.content .post-byline { color: #222; }
-.post-inner .entry { color: #000; }
-.entry code { background: #ddd; }
+/* Set Top Menu */
+.nav li a { font-size: 1em; font-weight: bold; }
 
-/* Sidebar font adjustments */
-.sidebar .widget>h3 { color: #000; }
-.sidebar .widget_login_logout .wrap_login_logout { font-weight: 400; color: #000; }
+/* Sidebar adjustments */
+/* Adjust Social Follow Text */
+.sidebar-top p { font-size: 1.125em; color: #fff; }
+/* Widget adjustments */
+.sidebar .widget>h3 { color: #000; text-transform: none; }
+.sidebar .widget { padding-top: 12px!important; padding-bottom: 0px!important; }
+.sidebar .widget .widget-title { font-size: 1.125em; margin-bottom: 2px; }
+.sidebar .widget_login_logout .wrap_login_logout { color: #000; font-weight: 400; padding-top: 3px; padding-left: 10px; }
+.sidebar .widget_login_logout, .sidebar .widget_login_logout a { color: #000; }
+.sidebar .widget_hu_tabs .alx-tabs-container { padding-left: 10px; }
 .sidebar .alx-tab .tab-item-title { color: #000; font-weight: 600; }
-.sidebar .alx-tab .tab-item-date { font-weight: 600; }
+.sidebar .alx-tab .tab-item-date, .sidebar .alx-posts .post-item-date { color: #155084; font-weight: 600; padding-left: 0px; }
+.sidebar .widget_twitter_timeline { padding-top: 8px; }
 
-/*  single post/page: author bio */
-.author-bio { border: none; background-color: #ddd; border-top: 5px solid #000; border-bottom: 1px solid #000; position: relative; padding: 15px 15px 8px 95px; color: #555; margin-top: 5px; margin-bottom: 20px; }
+/* home page */
+/*.content .page-title h2 { color: #111; }*/
+.page-title>h2, .page-title { font-size: 1.1em; color: #111; }
+/* settings for individual posts in list of posts */
+.content .post-title { margin-bottom: 0; }
+.content .post-title a { color: #222; font-weight: bold; }
+.content .post-byline { color: #222; }
+.content .post-content .post-date { padding-left: 0px; margin-left: 0px; color: #155084; font-weight: 600; }
+.content .post-content .entry.excerpt p { color: #111; }
+.post-meta { margin-bottom: 6px; }
+.entry.excerpt { color: #292f33; }
+
+/*  single page */
+.single-post .page-title.pad.group { padding-top: 16px; }
+.page-title span, .page-title span a { font-size: 1.02em; color: #111; }
+.post-inner .entry { color: #000; }
+.post-inner .entry code { background: #ddd; }
+.single .post { margin-bottom: 0px; padding-top: 0px; padding-left: 15px; padding-right: 15px; }
+.pagination { margin-bottom: 5px; }
+/*  author bio */
+.author-bio { border: none; background-color: #ddd; border-top: 5px solid #000; border-bottom: 1px solid #000; position: relative; padding: 15px 15px 8px 95px; color: #555; margin-top: 5px; margin-bottom: 30px; }
 .author-bio:before { content: none; }
 .author-bio:after { content: none; }
 .author-bio .bio-avatar { float: left; margin: 0px 0 8px -80px; width: 64px; height: auto; position: relative; }
@@ -44,19 +65,25 @@ Author: Robert Peteuil
 .author-bio .bio-desc { color: #222; font-size: .9em; line-height: 1.3em; margin-bottom: 4px; }
 .author-bio .bio-twitter { color: #444; padding-left: 0px; font-weight: 600; font-size: .8em; line-height: 1em; }
 .author-bio .bio-linkedin { color: #444; padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }
-
 /*  single : sharing buttons */
 .share-heading { color: #444; font-weight: 600; line-height: 1em; }
-.sharedaddy { padding-left: 110px; padding-bottom: 6px; margin-top: -19px; }
-
-/*  text and border color - bottom navigation  */
-.post-nav li a strong { color: #222; }
-.post-nav li a span { color: #111; font-weight: 500; }
-.content .post-nav { border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc; }
+.sharedaddy { padding-left: 110px; padding-bottom: 16px; margin-top: -19px; }
+/*  bottom navigation  */
+.content .post-nav li a strong { color: #222; }
+.content .post-nav li a span { color: #111; font-weight: 500; }
+.content .post-nav li a { min-height: 4em; padding-bottom: 1em; }
+.content .post-nav { border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; }
 .content .post-nav li.previous { box-shadow: 1px 0 0 #ccc, inset -1px 0 0 #ccc; }
+.content .post-nav { margin-bottom: 20px; }
+/*  related posts   */
+.heading i { margin-right: 0px; }
+.single .related-posts .post-title { margin-bottom: 2px!important; line-height: 1.25em; }
+.single .related-posts .post-meta { color: #155084; font-weight: 600; }
+.single .related-posts .post-thumbnail { margin-bottom: .5em; }
+.single .related-posts { margin-bottom: 0em; }
+.logged-in #reply-title, #reply-title, .comments-nav { margin-top: 5px; margin-bottom: 5px; }
 
-/* Footer - text and colors */
+/* Footer */
 #footer .widget>h3 { color: #111; font-weight: 600; }
 #footer .widget { color: #222; }
 #footer .widget select { color: #222; }
