@@ -11,9 +11,8 @@
 
 <body <?php body_class(); ?>>
 
+<!--  Need for my child theme edits -->
 <?php do_action( 'body_open' ); ?>
-
-<!-- <body <?php body_class(); ?>>   ORIGINAL -->
 
 <div id="wrapper">
 
@@ -27,11 +26,6 @@
     <div class="container-inner">
       <?php do_action('__before_main') ; ?>
       <div class="main">
-
-          <!-- <?php if ( function_exists('yoast_breadcrumb') ) {
-            yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-          }
-          ?> -->
 
         <div class="main-inner group">
           <?php do_action('__before_content') ; ?>
