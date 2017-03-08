@@ -43,25 +43,28 @@ Author: Robert Peteuil
 .sidebar .alx-tab .tab-item-date, .sidebar .alx-posts .post-item-date { color: #155084; font-weight: 600; padding-left: 0px; }
 .sidebar .widget_twitter_timeline { padding-top: 8px; }
 
-/* HOME */
-.page-title>h2, .page-title { font-size: 1.1em; color: #111; }
-/*   settings for individual posts in list of posts */
+/* HOME and SINGLE */
+.page-title, .page-title>h2 { font-size: 1.1em; color: #111; }
 .content .post-title { margin-bottom: 0; }
-.content .post-title a { color: #222; font-weight: bold; }
-.content .post-byline { color: #222; }
+
+/* HOME */
+/*   settings for individual posts in list of posts */
+.content .post-title a { color: #333; font-weight: 600; }
 .content .post-content .post-date { padding-left: 0px; margin-left: 0px; color: #155084; font-weight: 600; }
 .content .post-content .entry.excerpt p { color: #111; }
 .post-meta { margin-bottom: 6px; }
 .post-standard .post-inner { border-bottom: 1px solid #aaa;}
 
-/*  SINGLE POST */
-.page-title span { font-size: 1.02em; font-weight: normal; color: #183A74; }
-.page-title span a { font-size: 1.02em; font-weight: 600; color: #2458B5; }
+/* SINGLE POST */
+.page-title span { font-weight: normal; color: #183A74; }
+.page-title span a { font-weight: 600; color: #2458B5; }
 .single-post .page-title.pad.group { padding-top: 18px; }
-.post-inner .entry { color: #000; }
-.post-inner .entry code { background: #ddd; }
 .single .post { margin-bottom: 0px; padding-top: 0px; padding-left: 15px; padding-right: 15px; }
 .pagination { margin-bottom: 5px; }
+
+.content .post-byline { color: #555; font-weight: 600; }
+.post-inner .entry { color: #333; }
+.post-inner .entry code { background: #ddd; }
 /*    author bio */
 .author-bio { border: none; background-color: #ddd; border-top: 5px solid #000; border-bottom: 1px solid #000; position: relative; padding: 15px 15px 8px 95px; color: #555; margin-top: 5px; margin-bottom: 30px; }
 .author-bio:before { content: none; }
@@ -91,6 +94,7 @@ Author: Robert Peteuil
 .single .related-posts .post-meta { color: #155084; font-weight: 600; }
 .single .related-posts .post-thumbnail { margin-bottom: .5em; }
 .single .related-posts { margin-bottom: 0em; border-bottom: 0 solid #fcfcfc; }
+/*   comments    */
 .logged-in #reply-title, #reply-title, .comments-nav { margin-top: 5px; margin-bottom: 15px; }
 
 
