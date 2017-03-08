@@ -45,7 +45,8 @@ Author: Robert Peteuil
 .content .post-content .post-date { padding-left: 0px; margin-left: 0px; color: #155084; font-weight: 600; }
 .content .post-content .entry.excerpt p { color: #111; }
 .post-meta { margin-bottom: 6px; }
-.entry.excerpt { color: #292f33; }
+/*.entry.excerpt { color: #292f33; }*/
+.post-standard .post-inner { border-bottom: 1px solid #aaa;}
 
 /*  single page */
 .single-post .page-title.pad.group { padding-top: 16px; }
@@ -66,8 +67,10 @@ Author: Robert Peteuil
 .author-bio .bio-twitter { color: #444; padding-left: 0px; font-weight: 600; font-size: .8em; line-height: 1em; }
 .author-bio .bio-linkedin { color: #444; padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }
 /*  single : sharing buttons */
-.share-heading { color: #444; font-weight: 600; line-height: 1em; }
-.sharedaddy { padding-left: 110px; padding-bottom: 16px; margin-top: -19px; }
+.share-heading { color: #222; font-weight: 600; line-height: 1em; }
+.sharedaddy { padding-left: 100px; padding-bottom: 16px; margin-top: -20px; }
+.sd-content ul li a.sd-button, .sd-social-icon-text .sd-content ul li a.sd-button { color: #333!important; border: 1px solid #888; }
+
 /*  bottom navigation  */
 .content .post-nav li a strong { color: #222; }
 .content .post-nav li a span { color: #111; font-weight: 500; }
@@ -76,12 +79,16 @@ Author: Robert Peteuil
 .content .post-nav li.previous { box-shadow: 1px 0 0 #ccc, inset -1px 0 0 #ccc; }
 .content .post-nav { margin-bottom: 20px; }
 /*  related posts   */
+
+/*.fa { width: 0px; } - BLOW UP SOCIAL LINKS */
+.fa-hand-o-right:before { content: ""; }
 .heading i { margin-right: 0px; }
+
 .single .related-posts .post-title { margin-bottom: 2px!important; line-height: 1.25em; }
 .single .related-posts .post-meta { color: #155084; font-weight: 600; }
 .single .related-posts .post-thumbnail { margin-bottom: .5em; }
-.single .related-posts { margin-bottom: 0em; }
-.logged-in #reply-title, #reply-title, .comments-nav { margin-top: 5px; margin-bottom: 5px; }
+.single .related-posts { margin-bottom: 0em; border-bottom: 0 solid #fcfcfc; }
+.logged-in #reply-title, #reply-title, .comments-nav { margin-top: 5px; margin-bottom: 15px; }
 
 /* Footer */
 #footer .widget>h3 { color: #111; font-weight: 600; }
@@ -90,3 +97,7 @@ Author: Robert Peteuil
 #footer .tagcloud a { color: #222; }
 #footer .widget .textwidget li a { color: #222; }
 #copyright { color: #fff!important; }
+
+/* Fix social button hover cutoff  */
+.social-links .social-tooltip:hover:after { all: unset; }
+.social-links .social-tooltip:hover:before { all: unset; }
