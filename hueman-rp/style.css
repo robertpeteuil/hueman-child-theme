@@ -7,7 +7,8 @@ Author: Robert Peteuil
 */
 /* Your awesome customization starts here */
 
-/*  background colors - that extend to the bottom of main-inner */
+/*  BACKGROUND COLORS */
+/* overflow: hidden and padding/margin of 30k/-30k necessary to extend .content and .sidebar to bottom of main-inner */
 .main-inner { overflow: hidden; }
 .content { background-color: #fcfcfc; padding-bottom: 30000px; margin-bottom: -30000px; }
 .page-title { background: #ddd!important; }
@@ -21,7 +22,7 @@ Author: Robert Peteuil
 /* Set Top Menu */
 .nav li a { font-size: 1em; font-weight: bold; }
 
-/* Sidebar adjustments */
+/* SIDEBAR */
 /* Adjust Social Follow Text */
 .sidebar-top p { font-size: 1.125em; color: #fff; }
 /* Widget adjustments */
@@ -35,7 +36,7 @@ Author: Robert Peteuil
 .sidebar .alx-tab .tab-item-date, .sidebar .alx-posts .post-item-date { color: #155084; font-weight: 600; padding-left: 0px; }
 .sidebar .widget_twitter_timeline { padding-top: 8px; }
 
-/* home page */
+/* HOME */
 /*.content .page-title h2 { color: #111; }*/
 .page-title>h2, .page-title { font-size: 1.1em; color: #111; }
 /* settings for individual posts in list of posts */
@@ -48,9 +49,11 @@ Author: Robert Peteuil
 /*.entry.excerpt { color: #292f33; }*/
 .post-standard .post-inner { border-bottom: 1px solid #aaa;}
 
-/*  single page */
-.single-post .page-title.pad.group { padding-top: 16px; }
-.page-title span, .page-title span a { font-size: 1.02em; color: #111; }
+/*  SINGLE POST */
+/*.page-title span, .page-title span a { font-size: 1.02em; color: #111; }*/
+.page-title span { font-size: 1.02em; font-weight: normal; color: #183A74; }
+.page-title span a { font-size: 1.02em; font-weight: 600; color: #2458B5; }
+.single-post .page-title.pad.group { padding-top: 18px; }
 .post-inner .entry { color: #000; }
 .post-inner .entry code { background: #ddd; }
 .single .post { margin-bottom: 0px; padding-top: 0px; padding-left: 15px; padding-right: 15px; }
@@ -78,11 +81,11 @@ Author: Robert Peteuil
 .content .post-nav { border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; }
 .content .post-nav li.previous { box-shadow: 1px 0 0 #ccc, inset -1px 0 0 #ccc; }
 .content .post-nav { margin-bottom: 20px; }
-/*  related posts   */
 
-/*.fa { width: 0px; } - BLOW UP SOCIAL LINKS */
+/*  related posts   */
+/*.fa { width: 0px; } - DO NOT USE - IT BREAKS SOCIAL LINKS */
 .fa-hand-o-right:before { content: ""; }
-.heading i { margin-right: 0px; }
+.heading i { margin-left: -25px; margin-right: 0px; }
 
 .single .related-posts .post-title { margin-bottom: 2px!important; line-height: 1.25em; }
 .single .related-posts .post-meta { color: #155084; font-weight: 600; }
