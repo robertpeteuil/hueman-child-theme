@@ -38,21 +38,17 @@
   <div class="author-bio">
     <?php $user_name = get_the_author_meta('display_name'); ?>
     <?php $user_twitter = get_the_author_meta('twitter'); ?>
-    <!-- <?php $user_website = get_the_author_meta('user_url'); ?> -->
     <?php $user_linkedin = get_the_author_meta('linkedin'); ?>
     <?php $user_gplus = get_the_author_meta('googleplus'); ?>
 
     <div class="bio-avatar"><?php echo get_avatar(get_the_author_meta('user_email'),'128'); ?></div>
-
-    <!-- make name a link to G+ profile with rel="author" attribute -->
+    <!-- Link AuthorName to G+ profile (if meta exists) with rel="author" attribute -->
     <?php if ($user_gplus !== ''): ?>
       <p class="bio-name"><a target="_blank" href="<?php echo $user_gplus; ?>?rel=author"><?php echo $user_name; ?></a></p>
     <?php else: ?>
       <p class="bio-name"><?php the_author_meta('display_name'); ?></p>
     <?php endif ?>
-
     <p class="bio-desc"><?php the_author_meta('description'); ?></p>
-
     <div>
       <?php if ($user_twitter !== ''): ?>
         <span class="bio-twitter">Twitter <a target="_blank" href="https://twitter.com/<?php echo $user_twitter; ?>">&#64<?php echo $user_twitter; ?></a></span>
@@ -60,8 +56,6 @@
       <?php if ($user_linkedin !== ''): ?>
         <span class="bio-linkedin">LinkedIn <a target="_blank" href="<?php echo $user_linkedin; ?>" >Profile</a></span>
       <?php endif ?>
-      <!-- <span class="bio-linkedin">LinkedIn <a target="_blank" href="<?php echo $user_website; ?>" >Profile</a></span> -->
-      <!-- <span class="bio-google"><a target="_blank" href="<?php echo $user_gplus; ?>" rel="author">Google+</a></span></div> -->
     </div>
 
     <div class="clear"></div>
@@ -69,7 +63,7 @@
 <?php endif; ?>
 
 <!-- Display Jetpack Social Sharing Here  -->
-<div class="share-heading">SHARE THIS: <?php if ( function_exists( 'sharing_display' ) ) { sharing_display( '', true ); } ?></div>
+<div class="share-heading">SHARE THIS <?php if ( function_exists( 'sharing_display' ) ) { sharing_display( '', true ); } ?></div>
 
 <!-- Hide the display of tags  -->
 <!-- <?php the_tags('<p class="post-tags"><span>'.__('Tags:','hueman').'</span> ','','</p>'); ?> -->

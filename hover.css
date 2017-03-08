@@ -93,3 +93,21 @@ a:hover { color: #444; }
   transition-delay: initial;
   box-shadow: 0px 0px 8px #ddd;
 }
+
+@media only screen and (min-width: 479px) and (max-width: 960px) {
+  .s1 .sidebar-top { background: none!important; border-bottom: 1px solid #ddd; }
+  .s1 .sidebar-top p { color: #666; }
+  .s1 .sidebar-top .social-links .social-tooltip { color: #666; }
+}
+
+/*  common : social links
+/* ------------------------------------ */
+.social-links { float: right; position: relative; padding-top: 2px; font-size: 1rem; line-height: 1.5rem;}
+.social-links li { display: inline-block; margin-left: 8px; line-height: 1em; }
+.social-links li a { display: block!important; position: relative; text-align: center; }
+.social-links .social-tooltip { color: #fff; color: rgba(255,255,255,0.7); font-size: 1.5rem; display: inline; position: relative; z-index: 98; }
+.social-links .social-tooltip:hover { color: #fff!important; text-decoration: none; }
+.social-links .social-tooltip:hover:after { top: -36px; background: #fff; font-size: 0.875rem; color: #666; content: attr(title); display: block; right: 0; padding: 5px 15px; position: absolute; white-space: nowrap;
+-webkit-border-radius: 3px; border-radius: 3px;
+-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2); box-shadow: 0 0 2px rgba(0,0,0,0.2); }
+.social-links .social-tooltip:hover:before { top: -10px; right: 8px; border: solid; border-color: #fff transparent; border-width: 5px 5px 0 5px; content: ""; display: block; position: absolute; z-index: 1; }
