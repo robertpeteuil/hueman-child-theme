@@ -75,7 +75,7 @@ Author: Robert Peteuil
 .author-bio .bio-linkedin { color: #444; padding-left: 30px; font-weight: 600; font-size: .8em; line-height: 1em; }
 /*   sharing buttons */
 .share-heading { color: #444; font-weight: 600; font-size: 1.125em; line-height: 1em; }
-.sharedaddy { padding-left: 110px; padding-bottom: 16px; margin-top: -22px; }
+.sharedaddy { padding-left: 110px; padding-bottom: 10px; margin-top: -22px; }
 .sd-content ul li a.sd-button, .sd-social-icon-text .sd-content ul li a.sd-button { color: #333!important; border: 1px solid #888; }
 /*   bottom navigation  */
 .content .post-nav li a strong { color: #222; }
