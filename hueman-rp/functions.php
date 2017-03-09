@@ -30,8 +30,8 @@ add_action( 'loop_start', 'jptweak_remove_share' );
 // remove admin toolbar items
 function shapeSpace_remove_toolbar_node($wp_admin_bar) {
   $wp_admin_bar->remove_node('wp-logo');              // WordPress Logo
-  $wp_admin_bar->remove_node('new-content');          // Icon to add new site content
-  $wp_admin_bar->remove_node('stats');                // Bargraph when viewing site
+  $wp_admin_bar->remove_node('new-content');          // Add new content
+  $wp_admin_bar->remove_node('stats');                // Svr Load Bargraph 
 }
 add_action('admin_bar_menu', 'shapeSpace_remove_toolbar_node', 999);
 
