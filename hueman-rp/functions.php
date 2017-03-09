@@ -28,21 +28,21 @@ function jptweak_remove_share() {
 add_action( 'loop_start', 'jptweak_remove_share' );
 
 // remove admin toolbar items
-function shapeSpace_remove_toolbar_node($wp_admin_bar) {
+function RP_remove_toolbar_node($wp_admin_bar) {
   $wp_admin_bar->remove_node('wp-logo');              // WordPress Logo
   $wp_admin_bar->remove_node('new-content');          // Add new content
-  $wp_admin_bar->remove_node('stats');                // Svr Load Bargraph 
+  $wp_admin_bar->remove_node('stats');                // Svr Load Bargraph
 }
-add_action('admin_bar_menu', 'shapeSpace_remove_toolbar_node', 999);
+add_action('admin_bar_menu', 'RP_remove_toolbar_node', 999);
 
 // remove admin toolbar items - part 2 - alt technique
-function shapeSpace_remove_toolbar_menu() {
+function RP_remove_toolbar_menu() {
 	global $wp_admin_bar;
   $wp_admin_bar->remove_menu('wpseo-menu');           // Yoast SEO
   $wp_admin_bar->remove_menu('ybi_plugin_shortcut');  // Upload Plugin
 	$wp_admin_bar->remove_menu('wpaas');                // GoDaddy Logo
 }
-add_action('wp_before_admin_bar_render', 'shapeSpace_remove_toolbar_menu', 999);
+add_action('wp_before_admin_bar_render', 'RP_remove_toolbar_menu', 999);
 
 /* Add linkedin field to user metadata */
 function add_to_author_profile( $contactmethods ) {
