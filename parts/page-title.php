@@ -3,13 +3,13 @@
 	<?php if ( is_home() && hu_is_checked('blog-heading-enabled') ) : ?>
 		<h2><?php echo hu_blog_title(); ?></h2>
 	<?php elseif ( is_single() ): ?>
-		<ul class="meta-single group">
-      <?php if ( function_exists('yoast_breadcrumb') ) {
-        yoast_breadcrumb(' <p id="breadcrumbs">','</p> '); } ?>
-			<!-- <li class="category"><?php the_category(' <span>/</span> '); ?></li> -->
+    <?php if ( function_exists('yoast_breadcrumb') ) {
+      yoast_breadcrumb(' <p id="breadcrumbs">','</p> '); } ?>
+		<!-- <ul class="meta-single group">
+			<li class="category"><?php the_category(' <span>/</span> '); ?></li>
 			<?php if ( comments_open() && ( hu_is_checked( 'comment-count' ) ) ): ?>
 			<li class="comments"><a href="<?php comments_link(); ?>"><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></a></li>
-			<?php endif; ?>
+			<?php endif; ?> -->
 		</ul>
 
 	<?php elseif ( is_page() ): ?>
