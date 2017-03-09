@@ -8,18 +8,25 @@ Author: Robert Peteuil
 /* Your awesome customization starts here */
 
 /* BACKGROUND COLORS */
-/*   overflow: hidden and padding/margin of 30k/-30k necessary to extend .content and .sidebar to bottom of main-inner */
-.main-inner { overflow: hidden; }
-.content { background-color: #fcfcfc; padding-bottom: 30000px; margin-bottom: -30000px; }
-.page-title { background: #ddd!important; }
-.sidebar { background-color: #ddd; padding-bottom: 30000px; margin-bottom: -30000px; }
-#footer { background: #ddd; }
+/*   main areas */
+.page-title { background: #cfcfcf!important; border-bottom: 1px solid #b1b1b1; }
+.sidebar { background-color: #cfcfcf; padding-bottom: 30000px; margin-bottom: -30000px; }
+#footer { background: #cfcfcf; }
+/*   sub-sections */
+.content { background-color: #f0f1f2; padding-bottom: 30000px; margin-bottom: -30000px; }
+#commentform { background: #f0f1f2; }
 /*   border edges  */
-.page-title { box-shadow: 0px 2px 6px #bbb; }
-.sidebar { box-shadow: -1px 0px #bbb; }
+.page-title { box-shadow: 0px 2px 15px #bbb; }
+.sidebar { box-shadow: -1px 0px #aaa; }
+/*   layout fixes needed for color changes */
+.main-inner { overflow: hidden; }
 
 /* MAIN NAV MENU */
 .nav li a { font-size: 1em; font-weight: bold; }
+
+/* TITLE BAR */
+.page-title>h2 { font-size: 1.0em; font-weight: normal; color: #111; }
+.page-title { font-size: 1.2em; color: #111; }
 
 /* FOOTER */
 #footer .widget>h3 { color: #111; font-weight: 600; }
@@ -43,8 +50,7 @@ Author: Robert Peteuil
 .sidebar .alx-tab .tab-item-date, .sidebar .alx-posts .post-item-date { color: #155084; font-weight: 600; padding-left: 0px; }
 .sidebar .widget_twitter_timeline { padding-top: 8px; }
 
-/* HOME and SINGLE */
-.page-title, .page-title>h2 { font-size: 1.1em; color: #111; }
+/* FORMATTING - GENERAL */
 .content .post-title { margin-bottom: 0; }
 
 /* HOME */
@@ -57,14 +63,14 @@ Author: Robert Peteuil
 
 /* SINGLE POST */
 .page-title span { font-weight: normal; color: #183A74; }
-.page-title span a { font-weight: 600; color: #2458B5; }
-.single-post .page-title.pad.group { padding-top: 18px; }
+.page-title span a { color: #2458B5; }
 .single .post { margin-bottom: 0px; padding-top: 0px; padding-left: 15px; padding-right: 15px; }
 .pagination { margin-bottom: 5px; }
 
 .content .post-byline { color: #555; font-weight: 600; }
 .post-inner .entry { color: #333; }
-.post-inner .entry code { background: #ddd; }
+/*.post-inner .entry code { background: #ddd; }*/
+.post-inner .entry code { color: #444; font-weight: 600; background: #d6d6d6; padding: 03px 04px; }
 /*    author bio */
 .author-bio { border: none; background-color: #ddd; border-top: 5px solid #000; border-bottom: 1px solid #000; position: relative; padding: 15px 15px 8px 95px; color: #555; margin-top: 5px; margin-bottom: 30px; }
 .author-bio:before { content: none; }
@@ -93,9 +99,9 @@ Author: Robert Peteuil
 .single .related-posts .post-title { margin-bottom: 2px!important; line-height: 1.25em; }
 .single .related-posts .post-meta { color: #155084; font-weight: 600; }
 .single .related-posts .post-thumbnail { margin-bottom: .5em; }
-.single .related-posts { margin-bottom: 0em; border-bottom: 0 solid #fcfcfc; }
+.single .related-posts { margin-bottom: 0em; border-bottom: 0 solid #f0f1f2; }
 /*   comments    */
-.logged-in #reply-title, #reply-title, .comments-nav { margin-top: 5px; margin-bottom: 15px; }
+.logged-in #reply-title, #reply-title, .comments-nav { margin-top: 5px; margin-bottom: 0px; }
 
 
 /* FIXES */
