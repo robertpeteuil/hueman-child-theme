@@ -10,7 +10,7 @@ function my_theme_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles', 999 );
 
-/* WHide Dashboard View from all users by default */
+/* Whide Dashboard View from all users by default */
 add_action("user_register", "set_user_admin_bar_false_by_default", 10, 1);
 function set_user_admin_bar_false_by_default($user_id) {
     update_user_meta( $user_id, 'show_admin_bar_front', 'false' );
@@ -38,9 +38,9 @@ add_action('admin_bar_menu', 'shapeSpace_remove_toolbar_node', 999);
 // remove admin toolbar items - part 2 - alt technique
 function shapeSpace_remove_toolbar_menu() {
 	global $wp_admin_bar;
-  $wp_admin_bar->remove_menu('wpseo-menu');           // Yoast SEO Menu Item
-  $wp_admin_bar->remove_menu('ybi_plugin_shortcut');  // Upload Plugin item f curation suite
-	$wp_admin_bar->remove_menu('wpaas');                // GoDaddy Branding Logo
+  $wp_admin_bar->remove_menu('wpseo-menu');           // Yoast SEO
+  $wp_admin_bar->remove_menu('ybi_plugin_shortcut');  // Upload Plugin
+	$wp_admin_bar->remove_menu('wpaas');                // GoDaddy Logo
 }
 add_action('wp_before_admin_bar_render', 'shapeSpace_remove_toolbar_menu', 999);
 
