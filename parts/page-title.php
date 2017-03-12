@@ -4,8 +4,10 @@
 		<h2><?php echo hu_blog_title(); ?></h2>
 	<?php elseif ( is_single() ): ?>
     <?php if ( function_exists('yoast_breadcrumb') ): ?>
+      <!-- use yoast breadcrumbs if available  -->
       <?php yoast_breadcrumb(' <p id="breadcrumbs">','</p> '); ?>
     <?php else: ?>
+      <!-- otherwise use theme defaults -->
   		<ul class="meta-single group">
   			<li class="category"><?php the_category(' <span>/</span> '); ?></li>
   			<?php if ( comments_open() && ( hu_is_checked( 'comment-count' ) ) ): ?>
@@ -15,11 +17,11 @@
     <?php endif; ?>
 
 	<?php elseif ( is_page() ): ?>
-    <!-- <?php if ( function_exists('yoast_breadcrumb') ) {
-      yoast_breadcrumb(' <p id="breadcrumbs">','</p> '); } ?> -->
     <?php if ( function_exists('yoast_breadcrumb') ): ?>
+      <!-- use yoast breadcrumbs if available  -->
       <?php yoast_breadcrumb(' <p id="breadcrumbs">','</p> '); ?>
     <?php else: ?>
+      <!-- otherwise use theme defaults -->
 		    <h2><?php echo hu_get_page_title(); ?></h2>
     <?php endif; ?>
 	<?php elseif ( is_search() ): ?>
