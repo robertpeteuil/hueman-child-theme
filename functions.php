@@ -28,23 +28,23 @@ function jptweak_remove_share() {
 add_action( 'loop_start', 'jptweak_remove_share' );
 
 // remove admin toolbar items via remove_node
-function RP_remove_toolbar_node($wp_admin_bar) {
+function admintweak_remove_toolbar_node($wp_admin_bar) {
   $wp_admin_bar->remove_node('wp-logo');
   $wp_admin_bar->remove_node('new-content');
   $wp_admin_bar->remove_node('stats');
 }
-add_action('admin_bar_menu', 'RP_remove_toolbar_node', 999);
+add_action('admin_bar_menu', 'admintweak_remove_toolbar_node', 999);
 
 // remove admin toolbar items via remove_menu
-function RP_remove_toolbar_menu() {
+function admintweak_remove_toolbar_menu() {
 	global $wp_admin_bar;
   $wp_admin_bar->remove_menu('wpseo-menu');
   $wp_admin_bar->remove_menu('ybi_plugin_shortcut');
 	$wp_admin_bar->remove_menu('wpaas');
 }
-add_action('wp_before_admin_bar_render', 'RP_remove_toolbar_menu', 999);
+add_action('wp_before_admin_bar_render', 'admintweak_remove_toolbar_menu', 999);
 
-// add LinkedIn field to user metadata 
+// add LinkedIn field to user metadata
 function add_to_author_profile( $contactmethods ) {
   $contactmethods['linkedin'] = 'LinkedIn profile URL';
   return $contactmethods;
