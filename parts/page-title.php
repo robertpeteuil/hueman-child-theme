@@ -9,8 +9,8 @@
 			<li class="category"><?php the_category(' <span>/</span> '); ?></li>
 			<?php if ( comments_open() && ( hu_is_checked( 'comment-count' ) ) ): ?>
 			<li class="comments"><a href="<?php comments_link(); ?>"><i class="fa fa-comments-o"></i><?php comments_number( '0', '1', '%' ); ?></a></li>
-			<?php endif; ?> -->
-		</ul>
+			<?php endif; ?>
+		</ul> -->
 
 	<?php elseif ( is_page() ): ?>
     <?php if ( function_exists('yoast_breadcrumb') ) {
