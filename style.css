@@ -5,12 +5,12 @@ Description: A child theme of Hueman
 Template: hueman
 Author: Robert Peteuil
 */
-/* Your awesome customization starts here */
+
 
 /* MY NEW CSS CLASSES */
 /*   image control css  */
 /*.entry img.maxfifty { max-width: 50%; margin-top: 8px; margin-bottom: 8px; }*/
-.entry .maxfifty { max-width: 50%; margin-top: 8px; margin-bottom: 8px; }
+.entry img.maxfifty { max-width: 50%; margin-top: 8px; margin-bottom: 8px; }
 
 
 /* RESET CORE TEXT SETTINGS */
@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5, h6 { color: #000; font-weight: 600; -ms-word-wrap: break-wor
 .entry blockquote { position: relative; background-color: #fff; color: #000; font-style: normal; margin: 0 0 15px 0; padding: 15px 25px 5px 25px; }
 .entry blockquote p { margin-bottom: 0.75em; }
 .entry blockquote:before { content: "\f10d"; color: #999; font-size: 32px; font-style: normal; font-family: FontAwesome; text-align: center; position: absolute; left: 3px; top: -15px; }
+
 
 /* BACKGROUND COLORS */
 /*   main areas */
@@ -38,12 +39,15 @@ h1, h2, h3, h4, h5, h6 { color: #000; font-weight: 600; -ms-word-wrap: break-wor
 /*   layout fixes needed for color changes */
 .main-inner { overflow: hidden; }
 
+
 /* MAIN NAV MENU */
 .nav li a { font-size: 1em; font-weight: bold; }
+
 
 /* TITLE BAR */
 .page-title>h2 { font-size: 1.0em; font-weight: normal; color: #000; }
 .page-title { font-size: 1.2em; color: #000; }
+
 
 /* FOOTER */
 #footer .widget>h3 { color: #000; font-weight: 600; }
@@ -52,6 +56,7 @@ h1, h2, h3, h4, h5, h6 { color: #000; font-weight: 600; -ms-word-wrap: break-wor
 #footer .tagcloud a { color: #111; }
 #footer .widget .textwidget li a { color: #111; }
 #copyright { color: #fff!important; }
+
 
 /* SIDEBAR */
 /*   adjust Social Follow Text */
@@ -67,8 +72,10 @@ h1, h2, h3, h4, h5, h6 { color: #000; font-weight: 600; -ms-word-wrap: break-wor
 .sidebar .alx-tab .tab-item-date, .sidebar .alx-posts .post-item-date { color: #155084; font-weight: 600; padding-left: 0; }
 .sidebar .widget_twitter_timeline { padding-top: 8px; }
 
+
 /* FORMATTING - GENERAL */
 .content .post-title { margin-bottom: 0; }
+
 
 /* HOME */
 /*   settings for individual posts in list of posts */
@@ -77,6 +84,7 @@ h1, h2, h3, h4, h5, h6 { color: #000; font-weight: 600; -ms-word-wrap: break-wor
 .content .post-content .entry.excerpt p { color: #000; }
 .post-meta { margin-bottom: 6px; }
 .post-standard .post-inner { border-bottom: 1px solid #aaa;}
+
 
 /* SINGLE POST */
 .page-title span { font-weight: normal; color: #183A74; }
@@ -121,23 +129,7 @@ h1, h2, h3, h4, h5, h6 { color: #000; font-weight: 600; -ms-word-wrap: break-wor
 
 /* FIXES */
 /*   social button tooltip cutoff  */
-
-/* SOCIAL_AFTER FIXES */
-
 /*.social-links .social-tooltip:hover:after { all: unset; }*/
-
 .social-links .social-tooltip:hover:after { top: 0; content: none; padding: 0; -webkit-border-radius: 0; border-radius: 0; -webkit-box-shadow: 0 0 0 rgba(0,0,0,0); box-shadow: 0 0 0 rgba(0,0,0,0); }
-
-/*.social-links .social-tooltip:hover:after { top: -36px; background: #fff; font-size: 0.875rem; color: #666; content: attr(title); display: block; right: 0; padding: 5px 15px; position: absolute; white-space: nowrap;
--webkit-border-radius: 3px; border-radius: 3px;
--webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2); box-shadow: 0 0 2px rgba(0,0,0,0.2); }*/
-
-
-
-/* SOCIAL BEFORE FIXES*/
-
 /*.social-links .social-tooltip:hover:before { all: unset; }*/
-
 .social-links .social-tooltip:hover:before { top: 0; right: 0; border: none; border-width: 0; content: none; }
-
-/*.social-links .social-tooltip:hover:before { top: -10px; right: 8px; border: solid; border-color: #fff transparent; border-width: 5px 5px 0 5px; content: ""; display: block; position: absolute; z-index: 1; }*/
