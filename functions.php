@@ -50,3 +50,10 @@ function add_to_author_profile( $contactmethods ) {
   return $contactmethods;
 }
 add_filter( 'user_contactmethods', 'add_to_author_profile', 10, 1);
+
+// remove no-follow tags - https://digwp.com/2010/02/remove-nofollow-attributes-from-post-content/
+function remove_nofollow($string) {
+	$string = str_ireplace(' rel="nofollow"', '', $string);
+	return $string;
+}
+add_filter('the_content', 'remove_nofollow');
