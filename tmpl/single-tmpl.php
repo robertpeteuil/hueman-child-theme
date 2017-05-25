@@ -44,17 +44,17 @@
     <div class="bio-avatar"><?php echo get_avatar(get_the_author_meta('user_email'),'128'); ?></div>
     <!-- Link AuthorName to G+ profile (if meta exists) with rel="author" attribute -->
     <?php if ($user_gplus !== ''): ?>
-      <p class="bio-name"><a target="_blank" href="<?php echo $user_gplus; ?>?rel=author"><?php echo $user_name; ?></a></p>
+      <p class="bio-name"><a target="_blank" title="Google+ Page" href="<?php echo $user_gplus; ?>?rel=author"><?php echo $user_name; ?></a></p>
     <?php else: ?>
       <p class="bio-name"><?php the_author_meta('display_name'); ?></p>
     <?php endif ?>
     <p class="bio-desc"><?php the_author_meta('description'); ?></p>
     <div>
       <?php if ($user_twitter !== ''): ?>
-        <span class="bio-twitter">Twitter <a target="_blank" href="https://twitter.com/<?php echo $user_twitter; ?>">&#64<?php echo $user_twitter; ?></a></span>
+        <span class="bio-twitter">Twitter <a target="_blank" title="Twitter" href="https://twitter.com/<?php echo $user_twitter; ?>">&#64<?php echo $user_twitter; ?></a></span>
       <?php endif ?>
       <?php if ($user_linkedin !== ''): ?>
-        <span class="bio-linkedin">LinkedIn <a target="_blank" href="<?php echo $user_linkedin; ?>" >Profile</a></span>
+        <span class="bio-linkedin">LinkedIn <a target="_blank" title="LinkedIn Bio" href="<?php echo $user_linkedin; ?>" >Profile</a></span>
       <?php endif ?>
     </div>
 
